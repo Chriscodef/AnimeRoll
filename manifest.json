@@ -1,0 +1,18 @@
+{
+  "id": "com.animeroll.addon",
+  "version": "1.0.0",
+  "name": "AnimeRoll",
+  "description": "Add-on providing anime catalogs aggregated from animesdrive.blog and anroll.net",
+  "logo": "https://raw.githubusercontent.com/stremio/stremio-addons/master/example-logo.png",
+  "resources": [
+    "catalog",
+    { "name": "meta", "types": ["series"], "idPrefixes": ["animesdrive:", "anroll:", "tmdb:"] },
+    "stream"
+  ],
+  "types": ["series","movie","channel"],
+  "catalogs": [
+    { "id": "animesdrive:catalog:latest", "type": "series", "name": "AnimesDrive - Últimos" },
+    { "id": "anroll:catalog:latest", "type": "series", "name": "Anroll - Últimos" },
+    { "id": "tmdb:catalog:popular", "type": "series", "name": "TMDB - Animes Populares" }
+  ]
+}

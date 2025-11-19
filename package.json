@@ -1,0 +1,17 @@
+{
+  "name": "animeroll-addon",
+  "version": "1.0.0",
+  "description": "AnimeRoll Stremio add-on: catalogs from animesdrive.blog and anroll.net",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["stremio","addon","anime","animesdrive","anroll"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "stremio-addon-sdk": "*",
+    "node-fetch": "^2.6.7",
+    "cheerio": "^1.0.0-rc.12"
+  }
+}
